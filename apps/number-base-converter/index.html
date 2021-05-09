@@ -7,10 +7,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/resources/icons/wrench_favicon.png">
   <title>Number Base Converter - Utility Apps</title>
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
+  <header>
 
+  </header>
+  <main>
+    <h2>Number Base Converter</h2>
+    <p>Please select a base, enter the number in the selected base and click 'Convert'. The source number will be
+      converted to Binary, Octal, Decimal and Hexadecimal</p>
+    <div>
+      <p>
+        <label for="source-base">Source Base</label>
+        <select id="source-base">
+          <option value="">--Select--</option>
+          <option value="2">Binary</option>
+          <option value="8">Octal</option>
+          <option value="10">Decimal</option>
+          <option value="16">Hexadecimal</option>
+        </select>
+      </p>
+      <p>
+        <label for="source-num">Source Number</label>
+        <input type="text" id="source-num" placeholder="Enter Number" />
+      </p>
+      <p>
+        <input id="convert" type="button" value="Convert">
+      </p>
+    </div>
+    <div>
+      <p>Result</p>
+      <p>
+        <label for="binary-num">Binary</label>
+        <input type="text" id="binary-num" value="" disabled />
+      </p>
+      <p>
+        <label for="octal-num">Octal</label>
+        <input type="text" id="octal-num" value="" disabled />
+      </p>
+      <p>
+        <label for="decimal-num">Decimal</label>
+        <input type="text" id="decimal-num" value="" disabled />
+      </p>
+      <p>
+        <label for="hexadecimal-num">Hexadecimal</label>
+        <input type="text" id="hexadecimal-num" value="" disabled />
+      </p>
+    </div>
+
+
+
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
