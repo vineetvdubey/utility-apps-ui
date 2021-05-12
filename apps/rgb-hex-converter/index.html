@@ -24,6 +24,43 @@
   </header>
   <main>
     <h1>RGB/Hex Converter</h1>
+    <section>
+      <div>
+        <h2>RGB to Hex</h2>
+        <label for="r">Red</label>
+        <input class="rgb" type="number" id="r" min="0" max="255" value="255" />
+        <label for="g">Green</label>
+        <input class="rgb" type="number" id="g" min="0" max="255" value="255" />
+        <label for="b">Blue</label>
+        <input class="rgb" type="number" id="b" min="0" max="255" value="255" />
+        <input id="rgb2hex-convert" type="button" value="Convert">
+      </div>
+      <div>
+        <p>Result</p>
+        <p>
+          <label for="hex-result">Hex</label>
+          <input type="text" id="hex-result" value="" readonly />
+          <label for="hex-preview">Preview</label>
+          <input type="text" id="hex-preview" value="" readonly />
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Hex to RGB</h2>
+        <label for="hex">Hex #</label>
+        <input type="text" id="hex" maxlength="6" value="FFFFFF" />
+        <input id="hex2rgb-convert" type="button" value="Convert">
+      </div>
+      <div>
+        <p>Result</p>
+        <p>
+          <label for="rgb-result">RGB</label>
+          <input type="text" id="rgb-result" value="" readonly />
+          <input type="text" id="rgb-preview" value="" readonly />
+        </p>
+      </div>
+    </section>
   </main>
   <footer>
 
