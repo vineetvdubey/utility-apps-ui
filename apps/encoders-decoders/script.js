@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 window.onload = () => {
   const sourceUrl = document.querySelector('#source-url');
   const encodedUrlResult = document.querySelector('#encoded-url');
