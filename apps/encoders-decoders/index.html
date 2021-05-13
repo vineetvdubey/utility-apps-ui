@@ -24,6 +24,66 @@
   </header>
   <main>
     <h1>Encoders/Decoders</h1>
+    <section>
+      <div>
+        <h2>URL Encoder</h2>
+        <label for="source-url">URL</label>
+        <input type="text" id="source-url" />
+        <input id="url-encode" type="button" value="Encode">
+      </div>
+      <div>
+        <p>Result</p>
+        <p>
+          <label for="encoded-url"></label>
+          <input type="text" id="encoded-url" value="" readonly />
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>URL Decoder</h2>
+        <label for="source-encoded-url"></label>
+        <input type="text" id="source-encoded-url" />
+        <input id="url-decode" type="button" value="Decode">
+      </div>
+      <div>
+        <p>Result</p>
+        <p>
+          <label for="decoded-url"></label>
+          <input type="text" id="decoded-url" value="" readonly />
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Base64 Encoder</h2>
+        <label for="source-str"></label>
+        <input type="text" id="source-str" />
+        <input id="base64-encode" type="button" value="Encode">
+      </div>
+      <div>
+        <p>Result</p>
+        <p>
+          <label for="encoded-str">Preview</label>
+          <input type="text" id="encoded-str" value="" readonly />
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Base64 Decoder</h2>
+        <label for="source-encoded-str"></label>
+        <input type="text" id="source-encoded-str" />
+        <input id="str-decode" type="button" value="Decode">
+      </div>
+      <div>
+        <p>Result</p>
+        <p>
+          <label for="decoded-str"></label>
+          <input type="text" id="decoded-str" value="" readonly />
+        </p>
+      </div>
+    </section>
   </main>
   <footer>
 
