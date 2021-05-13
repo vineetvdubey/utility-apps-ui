@@ -30,4 +30,18 @@ window.onload = () => {
   strDecodeButton.onclick = () => {
     decodedStrResult.value = atob(sourceDecodedUrl.value);
   };
+
+  const hashSource = document.querySelector('#hash-source');
+  const hashGeneratorButton = document.querySelector('#hash-generator');
+  const md5Result = document.querySelector('#md5');
+  const sha1Result = document.querySelector('#sha1');
+  const sha256esult = document.querySelector('#sha256');
+  const sha512Result = document.querySelector('#sha512');
+
+  hashGeneratorButton.onclick = () => {
+    md5Result.value = CryptoJS.MD5(hashSource.value);
+    sha1Result.value = CryptoJS.SHA1(hashSource.value);
+    sha256esult.value = CryptoJS.SHA256(hashSource.value);
+    sha512Result.value = CryptoJS.SHA512(hashSource.value);
+  };
 };
