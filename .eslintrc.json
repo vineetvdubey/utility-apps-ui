@@ -10,16 +10,22 @@
      "endOfLine":"auto"
    }],
     "no-unused-vars": [
-        "error",
-        {
-            "argsIgnorePattern": "^_"
-        }
+      "error",
+      {
+          "argsIgnorePattern": "^_"
+      }
     ],
     "no-unused-expressions": [
-        2,
-        {
-            "allowShortCircuit": true
-        }
+      2,
+      {
+          "allowShortCircuit": true
+      }
+    ],
+    "no-param-reassign": [
+      2,
+      {
+          "props": false 
+      }
     ],
     "no-console": ["error"],
     "no-var": ["error"],
