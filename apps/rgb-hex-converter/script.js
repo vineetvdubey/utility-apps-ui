@@ -41,7 +41,7 @@ window.onload = () => {
 
   hex2rgbButton.addEventListener('click', () => {
     const rgbObj = hexToRgb(hex.value);
-    rgbResult.value = `RGB(${rgbObj.r}, ${rgbObj.g}, ${rgbObj.b})`;
-    rgbPreview.style.backgroundColor = rgbResult.value;
+    rgbResult.value = `(${rgbObj.r}, ${rgbObj.g}, ${rgbObj.b})`;
+    rgbPreview.style.backgroundColor = `rgb(${rgbObj.r}, ${rgbObj.g}, ${rgbObj.b})`;
   });
 };

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/resources/css/main.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="/resources/js/main.js" defer></script>
   <script src="./script.js" defer></script>
 </head>
 
@@ -18,16 +19,20 @@
     <nav role="navigation" class="nav-style">
       <a href="/" class="nav-option">#</a>
       <a href="/apps/encoders-decoders/" class="nav-option">Encoders/Decoders</a>
-      <a href="/apps/rgb-hex-converter/" class="nav-option">RGB/Hex Converter</a>
-      <a href="/apps/timestamp-converter/" class="nav-option">Timestamp Converter</a>
-      <a href="/apps/unit-converter/" class="nav-option">Unit Converter</a>
-      <a href="/apps/number-base-converter/" class="nav-option">Number Base Converter</a>
-      <a href="/apps/text-tools/" class="nav-option">Text Tools</a>
+      <a href="/apps/rgb-hex-converter/" class="nav-option">RGB/Hex&nbsp;Converter</a>
+      <a href="/apps/timestamp-converter/" class="nav-option">Timestamp&nbsp;Converter</a>
+      <a href="/apps/unit-converter/" class="nav-option">Unit&nbsp;Converter</a>
+      <a href="/apps/number-base-converter/" class="nav-option">Number&nbsp;Base&nbsp;Converter</a>
+      <a href="/apps/text-tools/" class="nav-option">Text&nbsp;Tools</a>
     </nav>
   </header>
   <main>
     <h1>RGB/Hex Converter</h1>
-    <section>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'sec-rgb-to-hex')" id="defaultOpen">RGB to Hex</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-hex-to-rgb')">Hex to RGB</button>
+    </div>
+    <section id="sec-rgb-to-hex" class="tabcontent">
       <div>
         <h2>RGB to Hex</h2>
         <label for="r">Red</label>
@@ -36,30 +41,28 @@
         <input class="rgb" type="number" id="g" min="0" max="255" value="255" />
         <label for="b">Blue</label>
         <input class="rgb" type="number" id="b" min="0" max="255" value="255" />
-        <input id="rgb2hex-convert" type="button" value="Convert">
+        <input id="rgb2hex-convert" type="button" value="Convert &rarr;">
       </div>
       <div>
-        <p>Result</p>
         <p>
           <label for="hex-result">Hex</label>
-          <input type="text" id="hex-result" value="" readonly />
+          <input type="text" id="hex-result" value="#FFFFFF" readonly />
           <label for="hex-preview">Preview</label>
           <input type="text" id="hex-preview" value="" readonly />
         </p>
       </div>
     </section>
-    <section>
+    <section id="sec-hex-to-rgb" class="tabcontent">
       <div>
         <h2>Hex to RGB</h2>
         <label for="hex">Hex #</label>
         <input type="text" id="hex" maxlength="6" value="FFFFFF" />
-        <input id="hex2rgb-convert" type="button" value="Convert">
+        <input id="hex2rgb-convert" type="button" value="Convert &rarr;">
       </div>
       <div>
-        <p>Result</p>
         <p>
           <label for="rgb-result">RGB</label>
-          <input type="text" id="rgb-result" value="" readonly />
+          <input type="text" id="rgb-result" value="(255, 255, 255)" readonly />
           <input type="text" id="rgb-preview" value="" readonly />
         </p>
       </div>
