@@ -1,0 +1,7 @@
+.apps-list {
+  text-align: center;
+}
+
+.apps-list li {
+  display: inline-block;
+}

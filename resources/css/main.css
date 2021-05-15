@@ -1,6 +1,6 @@
 html {
   font-family: 'Roboto', sans-serif;
-  background-color: #f1fffa;
+  background-color: #ffffff;
   color: #454545;
 }
 
@@ -13,18 +13,23 @@ h1 {
 }
 
 .nav-option {
-  color: #bb4d00;
+  color: #0c7737;
   font-weight: 900;
   padding: 10px;
   font-size: 1.2em;
+  text-decoration: none;
+}
+
+.nav-option:hover {
+  background-color: #058a592a;
 }
 
 /* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
   text-align: center;
+  background-color: #282a35;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -34,16 +39,18 @@ h1 {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.4s;
+  color: #ffffff;
+  background-color: #282a35;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #000000;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #04aa6d;
 }
 
 /* Style the tab content */
@@ -53,4 +60,5 @@ h1 {
   border: 1px solid #ccc;
   border-top: none;
   text-align: center;
+  background-color: #ffffff;
 }
