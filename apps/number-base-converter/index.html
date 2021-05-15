@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/resources/css/main.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="/resources/js/main.js" defer></script>
   <script src="./script.js" defer></script>
 </head>
 
@@ -27,50 +28,48 @@
   </header>
   <main>
     <h1>Number Base Converter</h1>
-    <p>Please select a base, enter the number in the selected base and click 'Convert'. The source number will be
-      converted to Binary, Octal, Decimal and Hexadecimal</p>
-    <div>
-      <p>
-        <label for="source-base">Source Base</label>
-        <select id="source-base">
-          <option value="">--Select--</option>
-          <option value="2">Binary</option>
-          <option value="8">Octal</option>
-          <option value="10">Decimal</option>
-          <option value="16">Hexadecimal</option>
-        </select>
-      </p>
-      <p>
-        <label for="source-num">Source Number</label>
-        <input type="text" id="source-num" placeholder="Enter Number" />
-      </p>
-      <p>
-        <input id="convert" type="button" value="Convert">
-      </p>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'sec-rgb-to-hex')" id="defaultOpen">Base Converter</button>
     </div>
-    <div>
-      <p>Result</p>
-      <p>
-        <label for="binary-num">Binary</label>
-        <input type="text" id="binary-num" value="" readonly />
-      </p>
-      <p>
-        <label for="octal-num">Octal</label>
-        <input type="text" id="octal-num" value="" readonly />
-      </p>
-      <p>
-        <label for="decimal-num">Decimal</label>
-        <input type="text" id="decimal-num" value="" readonly />
-      </p>
-      <p>
-        <label for="hexadecimal-num">Hexadecimal</label>
-        <input type="text" id="hexadecimal-num" value="" readonly />
-      </p>
-    </div>
-
-
-
-
+    <section id="sec-rgb-to-hex" class="tabcontent">
+      <p>Please select a base, enter the number in the selected base and click 'Convert'. The source number will be
+        converted to Binary, Octal, Decimal and Hexadecimal</p>
+      <div>
+        <p>
+          <label for="source-base">Source Base</label>
+          <select id="source-base">
+            <option value="">--Select--</option>
+            <option value="2">Binary</option>
+            <option value="8">Octal</option>
+            <option value="10">Decimal</option>
+            <option value="16">Hexadecimal</option>
+          </select>
+        </p>
+        <p>
+          <label for="source-num">Source Number</label>
+          <input type="text" id="source-num" placeholder="Enter Number" />
+        </p>
+        <p>
+          <input id="convert" type="button" value="Convert &rarr;">
+        </p>
+        <p>
+          <label for="binary-num">Binary</label>
+          <input type="text" id="binary-num" placeholder="Results appear here." readonly />
+        </p>
+        <p>
+          <label for="octal-num">Octal</label>
+          <input type="text" id="octal-num" placeholder="Results appear here." readonly />
+        </p>
+        <p>
+          <label for="decimal-num">Decimal</label>
+          <input type="text" id="decimal-num" placeholder="Results appear here." readonly />
+        </p>
+        <p>
+          <label for="hexadecimal-num">Hexadecimal</label>
+          <input type="text" id="hexadecimal-num" placeholder="Results appear here." readonly />
+        </p>
+      </div>
+    </section>
   </main>
   <footer>
 

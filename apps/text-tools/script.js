@@ -11,6 +11,11 @@ window.onload = () => {
   };
 
   countWordButton.onclick = () => {
-    countWordResult.value = countWordTextArea.value.trim().split(/\s+/).length;
+    const content = countWordTextArea.value;
+    if (content === '') {
+      countWordResult.value = '0';
+    } else {
+      countWordResult.value = countWordTextArea.value.trim().split(/\s+/).length;
+    }
   };
 };
