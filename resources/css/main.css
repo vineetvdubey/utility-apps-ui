@@ -62,3 +62,18 @@ h1 {
   text-align: center;
   background-color: #ffffff;
 }
+
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #04aa6d;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 3px;
+  font-weight: bold;
+}
