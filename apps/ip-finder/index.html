@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/resources/icons/wrench_favicon.png">
+  <title>Encoders/Decoders - Utility Apps</title>
+  <link rel="stylesheet" href="/resources/css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"
+    integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A=="
+    crossorigin="anonymous"></script>
+  <script src="/resources/js/main.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" class="nav-style">
+      <a href="/" class="nav-option">#</a>
+      <a href="/apps/encoders-decoders/" class="nav-option">Encoders/Decoders</a>
+      <a href="/apps/rgb-hex-converter/" class="nav-option">RGB/Hex&nbsp;Converter</a>
+      <a href="/apps/timestamp-converter/" class="nav-option">Timestamp&nbsp;Converter</a>
+      <a href="/apps/unit-converter/" class="nav-option">Unit&nbsp;Converter</a>
+      <a href="/apps/number-base-converter/" class="nav-option">Number&nbsp;Base&nbsp;Converter</a>
+      <a href="/apps/text-tools/" class="nav-option">Text&nbsp;Tools</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Encoders/Decoders</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'sec-url-encoder')" id="defaultOpen">URL Encoder</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-url-decoder')">URL Decoder</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-base64-encoder')">Base64 Encoder</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-base64-decoder')">Base64 Decoder</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-hash-generator')">Hash Generator</button>
+    </div>
+    <section id="sec-url-encoder" class="tabcontent">
+      <div>
+        <h2>URL Encoder</h2>
+        <label for="source-url"></label>
+        <textarea id="source-url" cols="50" rows="6" placeholder="Type (or paste) url."></textarea>
+        <input id="url-encode" type="button" value="Encode &rarr;" class="btn">
+        <label for="encoded-url"></label>
+        <textarea id="encoded-url" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
+      </div>
+    </section>
+    <section id="sec-url-decoder" class="tabcontent">
+      <div>
+        <h2>URL Decoder</h2>
+        <label for="source-encoded-url"></label>
+        <textarea id="source-encoded-url" cols="50" rows="6" placeholder="Type (or paste) encoded url."></textarea>
+        <input id="url-decode" type="button" value="Decode &rarr;" class="btn">
+        <label for="decoded-url"></label>
+        <textarea id="decoded-url" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
+      </div>
+    </section>
+    <section id="sec-base64-encoder" class="tabcontent">
+      <div>
+        <h2>Base64 Encoder</h2>
+        <label for="source-str"></label>
+        <textarea id="source-str" cols="50" rows="6" placeholder="Type (or paste) content."></textarea>
+        <input id="base64-encode" type="button" value="Encode &rarr;" class="btn">
+        <label for="encoded-str"></label>
+        <textarea id="encoded-str" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
+      </div>
+    </section>
+    <section id="sec-base64-decoder" class="tabcontent">
+      <div>
+        <h2>Base64 Decoder</h2>
+        <label for="source-encoded-str"></label>
+        <textarea id="source-encoded-str" cols="50" rows="6" placeholder="Type (or paste) encoded content."></textarea>
+        <input id="str-decode" type="button" value="Decode &rarr;" class="btn">
+        <label for="decoded-str"></label>
+        <textarea id="decoded-str" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
+      </div>
+    </section>
+    <section id="sec-hash-generator" class="tabcontent">
+      <div>
+        <h2>Hash Generator</h2>
+        <label for="hash-source"></label>
+        <textarea id="hash-source" cols="50" rows="6" placeholder="Type (or paste) content."></textarea>
+      </div>
+      <div><input id="hash-generator" type="button" value="Generate &rarr;" class="btn"></div>
+      <div>
+        <p>
+          <label for="md5">MD5</label>
+          <textarea type="text" id="md5" value="" cols="50" rows="6" placeholder="Results appear here."
+            readonly></textarea>
+        </p>
+        <p>
+          <label for="sha1">SHA-1</label>
+          <textarea type="text" id="sha1" value="" cols="50" rows="6" placeholder="Results appear here."
+            readonly></textarea>
+        </p>
+        <p>
+          <label for="sha256">SHA-256</label>
+          <textarea type="text" id="sha256" value="" cols="50" rows="6" placeholder="Results appear here."
+            readonly></textarea>
+        </p>
+        <p>
+          <label for="sha512">SHA-512</label>
+          <textarea type="text" id="sha512" value="" cols="50" rows="6" placeholder="Results appear here."
+            readonly></textarea>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/resources/icons/wrench_favicon.png">
+  <title>Encoders/Decoders - Utility Apps</title>
+  <link rel="stylesheet" href="/resources/css/main.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="/resources/js/main.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" class="nav-style">
+      <a href="/" class="nav-option">#</a>
+      <a href="/apps/clock-epoch/" class="nav-option">Clock/Epoch&nbsp;Time</a>
+      <a href="/apps/timer-stopwatch/" class="nav-option">Timer/Stop&nbsp;Watch</a>
+      <a href="/apps/ip-finder/" class="nav-option">IP&nbsp;Finder</a>
+      <a href="/apps/language-translator/" class="nav-option">Language&nbsp;Translator</a>
+      <a href="/apps/currency-converter/" class="nav-option">Currency&nbsp;Converter</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Clock/Epoch Time</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'sec-clock')" id="defaultOpen">Clock</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-epoch-time')">Epoch Time</button>
+    </div>
+    <section id="sec-clock" class="tabcontent">
+      <h2>Clock</h2>
+
+    </section>
+    <section id="sec-epoch-time" class="tabcontent">
+      <h2>Epoch Time</h2>
+      <p>The current Unix epoch time is</p>
+      <p id="epoch-display" class="epoch-display"></p>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
