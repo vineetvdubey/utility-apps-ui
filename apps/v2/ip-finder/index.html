@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/resources/icons/wrench_favicon.png">
+  <title>Encoders/Decoders - Utility Apps</title>
+  <link rel="stylesheet" href="/resources/css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="/resources/js/main.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" class="nav-style">
+      <a href="/" class="nav-option">#</a>
+      <a href="../clock-epoch/" class="nav-option">Clock/Epoch&nbsp;Time</a>
+      <a href="../timer-stopwatch/" class="nav-option">Timer/Stop&nbsp;Watch</a>
+      <a href="../ip-finder/" class="nav-option">IP&nbsp;Finder</a>
+      <a href="../language-translator/" class="nav-option">Language&nbsp;Translator</a>
+      <a href="../currency-converter/" class="nav-option">Currency&nbsp;Converter</a>
+    </nav>
+  </header>
+  <main>
+    <h1>IP Finder</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'sec-url-encoder')" id="defaultOpen">URL Encoder</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-url-decoder')">URL Decoder</button>
+    </div>
+    <section id="sec-url-encoder" class="tabcontent">
+      <div>
+        <h2>URL Encoder</h2>
+        <label for="source-url"></label>
+        <textarea id="source-url" cols="50" rows="6" placeholder="Type (or paste) url."></textarea>
+        <input id="url-encode" type="button" value="Encode &rarr;" class="btn">
+        <label for="encoded-url"></label>
+        <textarea id="encoded-url" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
+      </div>
+    </section>
+    <section id="sec-url-decoder" class="tabcontent">
+      <div>
+        <h2>URL Decoder</h2>
+        <label for="source-encoded-url"></label>
+        <textarea id="source-encoded-url" cols="50" rows="6" placeholder="Type (or paste) encoded url."></textarea>
+        <input id="url-decode" type="button" value="Decode &rarr;" class="btn">
+        <label for="decoded-url"></label>
+        <textarea id="decoded-url" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
