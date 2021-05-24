@@ -28,28 +28,10 @@
   <main>
     <h1>IP Finder</h1>
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'sec-url-encoder')" id="defaultOpen">URL Encoder</button>
-      <button class="tablinks" onclick="openTab(event, 'sec-url-decoder')">URL Decoder</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-ip-finder')" id="defaultOpen">IP Finder</button>
     </div>
-    <section id="sec-url-encoder" class="tabcontent">
-      <div>
-        <h2>URL Encoder</h2>
-        <label for="source-url"></label>
-        <textarea id="source-url" cols="50" rows="6" placeholder="Type (or paste) url."></textarea>
-        <input id="url-encode" type="button" value="Encode &rarr;" class="btn">
-        <label for="encoded-url"></label>
-        <textarea id="encoded-url" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
-      </div>
-    </section>
-    <section id="sec-url-decoder" class="tabcontent">
-      <div>
-        <h2>URL Decoder</h2>
-        <label for="source-encoded-url"></label>
-        <textarea id="source-encoded-url" cols="50" rows="6" placeholder="Type (or paste) encoded url."></textarea>
-        <input id="url-decode" type="button" value="Decode &rarr;" class="btn">
-        <label for="decoded-url"></label>
-        <textarea id="decoded-url" value="" cols="50" rows="6" placeholder="Results appear here." readonly></textarea>
-      </div>
+    <section id="sec-ip-finder" class="tabcontent">
+      <h2>IP Finder</h2>
     </section>
   </main>
   <footer>
