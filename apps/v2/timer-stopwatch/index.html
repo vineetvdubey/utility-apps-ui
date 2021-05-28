@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="/resources/icons/wrench_favicon.png">
   <title>Encoders/Decoders - Utility Apps</title>
   <link rel="stylesheet" href="/resources/css/main.css" />
+  <link rel="stylesheet" href="./style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
   <script src="/resources/js/main.js" defer></script>
@@ -33,9 +34,28 @@
     </div>
     <section id="sec-timer" class="tabcontent">
       <h2>Timer</h2>
+      <p></p>
+      <div>
+        <p>Set Timer</p>
+        <label for="mins-source">Min</label>
+        <input type="number" id="mins-source" min="0" max="99" value="00" />
+        <label for="secs-source">Sec</label>
+        <input type="number" id="secs-source" min="0" max="59" value="20" />
+        <p><input id="start" type="button" value="Start &rarr;" class="btn"></p>
+        <p class="timer-display"><span id="mins">00</span>&colon;<span id="secs">20</span></p>
+      </div>
     </section>
     <section id="sec-stopwatch" class="tabcontent">
       <h2>Stop Watch</h2>
+      <p class="stopwatch-display">
+        <span id="sw-mins">00</span>&colon;<span id="sw-secs">00</span>&period;<span id="sw-ms"
+          class="ms-display">00</span>
+      </p>
+      <p>
+        <input id="stopwatch-reset" type="button" value="Reset" class="btn sw-btn">
+        <input id="stopwatch-start" type="button" value="Start" class="btn sw-btn">
+        <input id="stopwatch-stop" type="button" value="Stop" class="btn sw-btn">
+      </p>
     </section>
   </main>
   <footer>

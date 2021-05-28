@@ -1,0 +1,41 @@
+.timer-display {
+  border: none;
+  background-color: #dddddd;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 2em;
+  display: inline-block;
+  margin: 0 0 25px 0;
+}
+
+.stopwatch-display {
+  border: none;
+  background-color: #dddddd;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 2em;
+  display: inline-block;
+  margin: 0 0 25px 0;
+}
+
+.ms-display {
+  font-size: 0.75em;
+}
+
+.sw-btn {
+  padding: 16px 32px;
+}
+
+#stopwatch-stop {
+  display: none;
+  background-color: #ee3030;
+}
+
+#stopwatch-reset {
+  display: none;
+  background-color: #555555;
+}
