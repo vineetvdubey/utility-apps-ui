@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="/resources/icons/wrench_favicon.png">
   <title>Encoders/Decoders - Utility Apps</title>
   <link rel="stylesheet" href="/resources/css/main.css" />
+  <link rel="stylesheet" href="./style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
   <script src="/resources/js/main.js" defer></script>
@@ -22,16 +23,24 @@
       <a href="../timer-stopwatch/" class="nav-option">Timer/Stop&nbsp;Watch</a>
       <a href="../ip-finder/" class="nav-option">IP&nbsp;Finder</a>
       <a href="../language-translator/" class="nav-option">Language&nbsp;Translator</a>
-      <a href="../currency-converter/" class="nav-option">Currency&nbsp;Converter</a>
+      <!-- <a href="../currency-converter/" class="nav-option">Currency&nbsp;Converter</a> -->
     </nav>
   </header>
   <main>
     <h1>Language Translator</h1>
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'sec-lang')" id="defaultOpen">Language Translator</button>
+      <button class="tablinks" onclick="openTab(event, 'sec-lang')" id="defaultOpen">English &rarr; Hindi</button>
     </div>
     <section id="sec-lang" class="tabcontent">
-      <h2>Language Translator</h2>
+      <h2 id="en-hi">English to Hindi Translation</h2>
+      <p id="error-msg"></p>
+      <label for="source-str-en"></label>
+      <textarea id="source-str-en" cols="50" rows="6"
+        placeholder="Type (or paste) content.">Hard work, honesty, success!</textarea>
+      <input id="translate-en-hi" type="button" value="Translate &rarr;" class="btn">
+      <label for="translated-str-hi"></label>
+      <textarea id="translated-str-hi" value="" cols="50" rows="6" placeholder="Results appear here."
+        readonly></textarea>
     </section>
   </main>
   <footer>
