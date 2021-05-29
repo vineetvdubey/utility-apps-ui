@@ -40,17 +40,22 @@ html {
   color: #282a35;
 }
 
-@media screen and (max-width: 600px) {
-  .apps-list {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
-}
-
-footer {
+#footer {
   width: 100%;
   overflow: hidden;
   position: fixed;
   bottom: 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .apps-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+
+  #footer {
+    position: unset;
+    margin-top: 20px;
+  }
 }
