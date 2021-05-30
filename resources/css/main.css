@@ -82,6 +82,7 @@ ul.nav-menu {
     top: 4em;
     flex-direction: column;
     background-color: #fff;
+    justify-content: start;
     width: 100%;
     text-align: center;
     transition: 0.2s;
@@ -96,7 +97,7 @@ ul.nav-menu {
   }
 
   .nav-item {
-    margin: 2.5rem 0;
+    margin: 1.5em 0;
   }
 
   .hamburger {
