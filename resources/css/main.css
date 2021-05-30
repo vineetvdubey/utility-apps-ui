@@ -78,7 +78,7 @@ ul.nav-menu {
 
   .nav-menu {
     flex-flow: nowrap;
-    left: 200%;
+    left: -100%;
     top: 4em;
     flex-direction: column;
     background-color: #fff;
@@ -114,6 +114,10 @@ ul.nav-menu {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  textarea {
+    width: 100%;
   }
 }
 
