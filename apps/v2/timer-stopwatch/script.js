@@ -1,6 +1,23 @@
 const currentTimeMillis = () => Date.now();
 const currentTimeSecs = () => Math.floor(currentTimeMillis() / 1000);
 
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+const beep = (durationInMs = 250) => {
+  const oscillator = audioCtx.createOscillator();
+  const gainNode = audioCtx.createGain();
+  oscillator.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+
+  gainNode.gain.value = 0.8;
+  oscillator.frequency.value = 500;
+  oscillator.type = 'sine';
+
+  oscillator.start();
+  setTimeout(() => {
+    oscillator.stop();
+  }, durationInMs);
+};
+
 window.onload = () => {
   const minsSourceElement = document.querySelector('#mins-source');
   const secsSourceElement = document.querySelector('#secs-source');
@@ -16,6 +33,7 @@ window.onload = () => {
       const timeleft = time - (currentTimeSecs() - start);
       if (timeleft <= 0) {
         clearInterval(runningTimerInterval);
+        beep();
         minsElement.innerHTML = '00';
         secsElement.innerHTML = '00';
       } else {
