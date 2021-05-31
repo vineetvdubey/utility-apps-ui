@@ -33,9 +33,9 @@ window.onload = () => {
       const timeleft = time - (currentTimeSecs() - start);
       if (timeleft <= 0) {
         clearInterval(runningTimerInterval);
-        beep();
         minsElement.innerHTML = '00';
         secsElement.innerHTML = '00';
+        beep();
       } else {
         const minutes = Math.floor((timeleft % (60 * 60)) / 60);
         const seconds = Math.floor(timeleft % 60);
